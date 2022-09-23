@@ -1,0 +1,15 @@
+.container{
+    padding: 20px;
+}
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+app-products-item{
+    flex: 33.33%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid black;
+}
