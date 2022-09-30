@@ -1,6 +1,8 @@
 <div class="item-container">
+    <img [src]="this.image" alt="" width="200px" height="200px">
     <p>Nombre: {{productItem.name}}</p>
     <p>Descripción: {{productItem.description}}</p>
-    <p>Precio: {{productItem.price}}</p>
-    <img [src]="this.image" alt="" width="100px" height="100px">
+    <p>Precio: ${{productItem.price}}</p>
+    <button class="btn btn-warning" (click)="edit()" role="button">Editar</button>
+    <button class="btn btn-danger" (click)="delete()" role="button">Eliminar</button>
 </div>

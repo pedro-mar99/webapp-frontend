@@ -11,7 +11,8 @@ const routes: Routes = [
     runGuardsAndResolvers: 'always',
     children: [
       {path: 'products', component: ProductsComponent},
-      {path: 'new-products', component: NewProductsComponent}
+      {path: 'new-products', component: NewProductsComponent},
+      {path: 'edit-product/:id', component: NewProductsComponent}
     ]
   },
   // {path: '**', component: NotFoundComponent, pathMatch: 'full'} PARA PAGINA NOTFOUND

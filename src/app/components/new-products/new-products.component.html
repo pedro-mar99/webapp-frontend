@@ -1,6 +1,6 @@
 <div class="container">
-  <h5>Pantalla de Nuevo Producto</h5>
-  <form [formGroup]="form" (ngSubmit)="createProduct()">
+  <h5>Pantalla de {{this.screenMode}} Producto</h5>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label>Nombre</label>
       <input
@@ -37,7 +37,7 @@
         <input class="form-control" type="file" id="formFile" (change)="setFile($event)">
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Agregar</button>
+    <button type="submit" class="btn btn-primary">{{this.buttonTitle}}</button>
     <div *ngIf="submitMessage" class="alert alert-success" role="alert">
       ¡El producto ha sido creado con éxito!
     </div>
